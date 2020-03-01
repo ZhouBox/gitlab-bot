@@ -143,7 +143,7 @@ class WebhookService extends Service {
         break
       default:
         // gitlab 11.3 未支持source参数
-        sourceString = `${name}`
+        sourceString = `未知来源`
     }
 
     content.push(`[[#${pipelineId}流水线](${pipelineUrl})] <font color="${statusColor}">${statusString}</font>，位于${ref}分支，由<font color="info">${sourceString}</font>触发。`)
