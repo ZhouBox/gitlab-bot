@@ -35,7 +35,7 @@ class HomeController extends Controller {
       },
       // 自动解析 JSON response
       dataType: 'json',
-      // 3 秒超时
+      // 20 秒超时
       timeout: 20000,
 
       data: message,

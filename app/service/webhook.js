@@ -136,7 +136,10 @@ class WebhookService extends Service {
         sourceString = '合并操作'
         break
       case 'web':
-        sourceString = '网页运行'
+        sourceString = 'Web IED'
+        break
+      case 'schedule':
+        sourceString = 'CI/CD计划'
         break
       default:
         // gitlab 11.3 未支持source参数
